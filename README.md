@@ -1,5 +1,7 @@
 # Lista de Tarefas
 
+![Captura de tela 2024-05-18 200529](https://github.com/DevZank/ToDoList_React/assets/111926496/593973c6-7821-4da0-9bdc-92fa00165d52)
+
 Este é um projeto de Lista de Tarefas simples, desenvolvido com React.js, que permite adicionar e visualizar tarefas em um layout organizado em grade.
 
 ## Visão Geral
