@@ -1,0 +1,109 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/BG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ToDoContainer {
+  width: 45vw;
+  height: 60vh;
+  overflow: hidden;
+  background: rgba(60, 60, 60, 0.29);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(60, 60, 60, 1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  h1 {
+    color: #fff;
+    position: absolute;
+    top: 3vh;
+  }
+
+  .AddTask {
+    position: relative;
+    margin-top: 100px;
+
+    input {
+      width: 14vw;
+      height: 3rem;
+      background: transparent;
+      padding: 15px;
+      color: #fff;
+      border-radius: 32px;
+      border: 1px solid #fff;
+
+      &::placeholder {
+        color: #fff;
+      }
+      &:focus {
+        outline: none;
+        border: 1px solid #fff;
+      }
+    }
+
+    .BtnADD {
+      position: absolute;
+      right: 0;
+      background: transparent;
+      font-size: 2rem;
+      padding: 0 15px;
+      border: none;
+      color: #fff;
+    }
+  }
+
+  .TaskContainer {
+    position: absolute;
+    padding: 25px;
+    bottom: 0;
+    left: 0;
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 45vw;
+    height: 30vh;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    ul {
+      width: 42vw;
+      display: grid;
+      grid-template-columns: repeat(4, 3fr);
+      gap: 10px;
+    }
+
+    li {
+      position: relative;
+      background: rgba(60, 60, 60, 0.822);
+      padding: 10px;
+      border-radius: 10px;
+      height: 5vh;
+      border: 1px solid #fff;
+      color: #fff;
+
+      button {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        background: transparent;
+        border: none;
+        font-size: 2rem;
+        color: #02c43c;
+      }
+    }
+  }
+}
