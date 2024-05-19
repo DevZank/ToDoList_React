@@ -38,7 +38,7 @@ Este projeto demonstra como criar uma interface de usuário para uma lista de ta
     ```bash
     npm run dev
     ```
-5. Abra o navegador e acesse `http://localhost:PORTA_DO_HOST` para ver o carrossel em ação.
+5. Abra o navegador e acesse `http://localhost:PORTA_DO_HOST` 
 
 ---
 
